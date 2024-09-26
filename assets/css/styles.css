@@ -1,0 +1,133 @@
+/* Basic Reset */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+/* Weather Section */
+#current-weather, #forecast, #search-history {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#current-details img {
+    width: 100px;
+    height: auto;
+}
+
+#forecast-cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.forecast-card img {
+    width: 50px;
+    height: auto;
+}
+
+/* Search History */
+#history-list {
+    list-style: none;
+}
+
+#history-list li {
+    background: #e9ecef;
+    margin-bottom: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#history-list li:hover {
+    background: #dee2e6;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #343a40;
+    color: #fff;
+}
+
+body.dark-mode header {
+    background: #495057;
+}
+
+body.dark-mode #current-weather, 
+body.dark-mode #forecast, 
+body.dark-mode #search-history {
+    background: #495057;
+    border: 1px solid #6c757d;
+}
+
+body.dark-mode #history-list li {
+    background: #6c757d;
+}
+
+body.dark-mode form button {
+    background: #343a40;
+    color: #fff;
+}
+
+body.dark-mode form button:hover {
+    background: #212529;
+}
